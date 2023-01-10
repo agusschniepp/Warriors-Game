@@ -1,0 +1,24 @@
+{
+  "name": "warriors-game",
+  "version": "1.0.0",
+  "description": "Juego basico hecho con JS",
+  "main": "main.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agusschniepp/Warriors-Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agusschniepp/Warriors-Game/issues"
+  },
+  "homepage": "https://github.com/agusschniepp/Warriors-Game#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

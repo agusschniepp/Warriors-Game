@@ -184,7 +184,13 @@ button:hover {
     p{
         font-size: 7.5px;
     }
-    .button{
+    button{
+        font-size: 7.5px;
+    }
+    button:disabled{
+        font-size: 7.5px;
+    }
+    button:disabled:hover{
         font-size: 7.5px;
     }
     .battle-tittle{
@@ -202,18 +208,18 @@ button:hover {
         width: 100%;
     }
     .warrior-image{
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         cursor: pointer;
         
     }
     #warrior-player{
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
     #warrior-pc{
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
     .warriors-selected{
         padding: 0px 15px 0px 15px
