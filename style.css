@@ -1,0 +1,225 @@
+*{
+    font-family: 'Press Start 2P', cursive;;
+}
+
+.menu{
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size:  center;
+    background-position: top;
+    transition: background-position 2s;
+}
+
+.warriors-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-tittle{
+    color: #000;
+    font-size: 30px;
+    border: 2px solid #000;
+    background: burlywood;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.warriors-menu{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.warriors-characters {
+    display: flex;
+    justify-content: center;
+}
+
+.warrior{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    transform: scale(1);
+    transition: transform .1s;
+}
+
+.warrior label{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.warrior-image{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;  
+}
+#warrior-player{
+    width: 100px;
+    height: 100px;
+}
+#warrior-pc{
+    width: 100px;
+    height: 100px;
+}
+
+.warrior:hover{
+    transform: scale(1.1);
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    filter: brightness(.5);
+}
+
+.warrior-attacks{
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-battle{
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size:  center;
+    background-position: bottom;
+    transition: background-position 2s;
+}
+
+#ejemplo{
+    height: 50px;
+    width: 50px;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.battle{
+    background-color: antiquewhite;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button{
+    color: #000;
+    border: 2px solid #000;
+    background: burlywood;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: transform .1s;
+    cursor: pointer;
+}
+button:disabled{
+    color: #000;
+    border: 2px solid #000;
+    background: #444;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+button:disabled:hover{
+    color: #000;
+    border: 2px solid #000;
+    background: #444;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transform: scale(1);
+}
+
+p{
+    font-size: 15px;
+    font-weight: 900;
+}
+.warriors-selected-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.warriors-selected{
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#button-reset{
+    opacity: 0;
+    z-index: -1;
+    cursor: default;
+}
+
+@media (max-width: 460px) {
+    .game-tittle{
+        font-size: 15px;
+    }
+    p{
+        font-size: 7.5px;
+    }
+    .button{
+        font-size: 7.5px;
+    }
+    .battle-tittle{
+        font-size: 15px;
+    }
+    .menu{
+        background-repeat: no-repeat;
+        background-size:  cover;
+    }
+    .menu-combate{
+        background-repeat: no-repeat;
+        background-size:  cover;
+    }
+    .battle{
+        width: 100%;
+    }
+    .warrior-image{
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        
+    }
+    #warrior-player{
+        width: 60px;
+        height: 60px;
+    }
+    #warrior-pc{
+        width: 60px;
+        height: 60px;
+    }
+    .warriors-selected{
+        padding: 0px 15px 0px 15px
+    }
+    .warrior {
+        margin: 5px;
+    }
+    
+}

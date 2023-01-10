@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Agustin Schniepp">
+    <meta name="description" content="Bienvenidos a Warriors battle">
+    <meta name="robots" content="index">
+    <!--Style CSS & Normalize-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <!--Tittle & Icon-->
+    <title>Warriors battle</title>
+    <link rel="icon" href="img/icono.jpg">
+</head>
+<body id="body" class="menu">
+    <!--Menu-->
+    <section id="select-warrior" class="warriors-container">
+        <h1 class="game-tittle">Warriors arena</h1> 
+        <div class="warriors-menu">
+            <section id="warrior-option" class="warriors-characters">
+            </section>
+            <button id="button-select">Select</button>
+            <audio src="img/sound.mp3"></audio>
+        </div>
+    </section>
+    <!--Warriors battle-->
+    <section id="select-warrior-attacks" class="warrior-attacks">
+        <h1 class="game-tittle">Warriors arena</h1>
+        <div class="warriors-selected-container">
+            <section class="warriors-selected">
+                <H2>You</H2>
+                <img id="warrior-player" src="" alt="You">
+                <span id="lifes-player"></span>
+            </section>
+            <section class="warriors-selected">
+                <H2>Enemy</H2>
+                <img id="warrior-pc" src="" alt="Enemy">
+                <span id="lifes-pc"></span>
+            </section>
+        </div>
+        <h2 class="battle-tittle">
+            Select your attack
+        </h2>
+        <p id="button-warriors">
+        </p>
+        <section class="results">
+            <section class="battle">
+                <span id="message"></span>
+            </section>
+            <section id="reset">
+                <button id="button-reset" disabled>Reset</button>
+            </section>
+        </section>
+    </section>
+    <!--Game sounds-->
+    <audio src="img/sound.mp3"></audio>
+    <audio src="img/arco.mp3"></audio>
+    <audio src="img/hacha.mp3"></audio>
+    <audio src="img/sword.mp3"></audio>
+    <!--Script-->
+    <script src="main.js"></script>
+</body>
+</html>
