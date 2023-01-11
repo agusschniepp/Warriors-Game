@@ -5,5 +5,5 @@ const app = express();
 app.use(cors());
 app.use(express.static('public'));
 app.listen(8080,() => {
-    console.log('Servidor Iniciado'.green);
+    console.log('Servidor Iniciado'.rainbow);
 })
